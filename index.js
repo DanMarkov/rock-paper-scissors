@@ -45,9 +45,13 @@ function game() {
 
         if (gameplay === "It's a tie!" || gameplay === "please choose rock, paper or scissors only!") {
             round--;  
-        } else if (gameplay === "Oh, damn, you lose by a paper..." || gameplay === "Oh, damn, you lose by scissors..." || gameplay === "Oh, damn, you lose by a rock...") {
+        } else if (gameplay === "Oh, damn, you lose by a paper..." || 
+                   gameplay === "Oh, damn, you lose by scissors..." || 
+                   gameplay === "Oh, damn, you lose by a rock...") {
             computerCount++;
-        } else if (gameplay === "Hooray! You win, scissors beat paper =)" || gameplay === "Hooray! You win, a rock beats scissors =)" || gameplay === "Hooray! You win, paper beats rock =)") {
+        } else if (gameplay === "Hooray! You win, scissors beat paper =)" || 
+                   gameplay === "Hooray! You win, a rock beats scissors =)" || 
+                   gameplay === "Hooray! You win, paper beats rock =)") {
             userCount++; 
         } 
 
