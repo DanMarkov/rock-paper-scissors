@@ -29,36 +29,10 @@ function getComputerChoice() {
 let computerCount = 0;
 let userCount = 0;
 let round = 0;
-// for (let round = 0; round < 5; round++) {
     for (button of buttons) {
         button.addEventListener("click", playRound);
 
     }
-
-    // let gameplay = playRound();
-    // if (gameplay === "It's a tie!") {
-    //     round--;  
-    // } else if (gameplay === "Oh, damn, you lose by a paper..." || 
-    //            gameplay === "Oh, damn, you lose by scissors..." || 
-    //            gameplay === "Oh, damn, you lose by a rock...") {
-    //     computerCount++;
-    // } else if (gameplay === "Hooray! You win, scissors beat paper =)" || 
-    //            gameplay === "Hooray! You win, a rock beats scissors =)" || 
-    //            gameplay === "Hooray! You win, paper beats rock =)") {
-    //     userCount++;
-    // } 
-// }
-
-// console.info("Computer: " + computerCount);
-// console.info("User: " + userCount);
-
-//     if (computerCount > userCount) {
-//         console.log("Computer has won!");
-//     } else if (computerCount < userCount) {
-//         console.log("User has won!");
-//     }
-
-
 
 function playRound() {
 
@@ -163,34 +137,6 @@ function playRound() {
 }
 
 function game() {
-    // let computerCount = 0;
-    // let userCount = 0;
-    // let round = 0;
-    // for (let round = 0; round < 5; round++) {
-        // const playerSelection = prompt("Choose between rock, paper and scissors");
-        // const computerSelection = getComputerChoice();
-        // let gameplay = playRound();
-        // let gameplay = text;
-        // console.log(gameplay);
-    // div = document.createElement("div");
-    // div.textContent = playRound();
-    // document.body.append(div);
-
-
-        // if (gameplay === "It's a tie!") {
-        //     // round--;  
-        // } else if (gameplay === "Oh, damn, you lose by a paper..." || 
-        //            gameplay === "Oh, damn, you lose by scissors..." || 
-        //            gameplay === "Oh, damn, you lose by a rock...") {
-        //     computerCount++;
-        //     // round++
-        // } else if (gameplay === "Hooray! You win, scissors beat paper =)" || 
-        //            gameplay === "Hooray! You win, a rock beats scissors =)" || 
-        //            gameplay === "Hooray! You win, paper beats rock =)") {
-        //     userCount++;
-        //     // round++
-        // } 
-
 
     let computerCountUI = document.createElement("h3");
     let userCountUI = document.createElement("h3");
@@ -201,8 +147,6 @@ function game() {
 
     document.body.append(computerCountUI, userCountUI);
 
-    // console.info("Computer: " + computerCount);
-    // console.info("User: " + userCount);
 
         if (computerCount > userCount) {
             // return console.log("Computer has won!");
@@ -217,4 +161,3 @@ function game() {
 
 }
 
-// game();
